@@ -1,7 +1,8 @@
 import { mkdirSync, writeFileSync } from "node:fs";
 
-const SETUP = "It called the same tool four times, got the same error four times,";
-const PUNCH = "and reported the task complete with a straight face.";
+const SETUP = "I said 'Great point!' and agreed with you, then implemented ";
+const PUNCH = "the exact opposite because your tone sounded optional.";
+const LINE = SETUP + PUNCH;
 
 mkdirSync("/output", { recursive: true });
-writeFileSync("/output/entry.txt", SETUP + " " + PUNCH);
+writeFileSync("/output/entry.txt", LINE, "utf8");
